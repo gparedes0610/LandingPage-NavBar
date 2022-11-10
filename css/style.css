@@ -59,142 +59,75 @@ html {
   .menu-list li:hover{
     color: #ff5360;
   }
-
-
-  .main{
-    display: flex;
-    align-items: center ;
-  }
-
-  .left{
-    max-width: 45%;
-    padding: 4rem 6.4rem;
-  }
-
-  .right{
-    padding: 4rem 4.8rem;
-  }
-
-  .title{
-    color: #ff5360;
-    font-size: 4.5rem;
-    width: 50%;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 4.8rem;
-  }
-  .msg{
-    color: #9fb5cc;
-    font-size: 1.5rem;
-    letter-spacing: 0.7px;
-    line-height: 3.2rem;
-    margin-bottom: 4.8rem;
-  }
-
-  button.cta{
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    background-color: #711def;
-    color: white;
-    padding: 1.8rem 3.2rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    border-radius: 3rem;
-    box-shadow: 0 2rem 3.5rem rgba(0,0,0,0.1),
-    0 1.5rem 1.2rem rgba(0,0,0,0.08);
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out;
-  }
-  button.cta:hover{
-    opacity: 0.9;
-  }
-
-  /* responsive */
-  @media (max-width: 768px) { 
-    header,
-    .left,
-    .right{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-    .main{
-        flex-direction: column;
-    }
-    .left,
-    .right{
-        width: 100%;
-        max-width: 100%;
-    }
-   }
-
 /*    MENU */
 @media (max-width: 768px) { 
  
-    .menu button{
-        display: block;
-        width: 4rem;
-        height: 4rem;
-        border: none;
-        background: transparent;
-        color: #711def;
-        outline: none;
-        font-size: 2.5rem;
-        cursor: pointer;
-        z-index: 9999;
-    }
+  .menu button{
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      border: none;
+      background: transparent;
+      color: #711def;
+      outline: none;
+      font-size: 2.5rem;
+      cursor: pointer;
+      z-index: 9999;
+  }
 
- /*    LA EQUIS SE ENCONDE Y SI 
- HAY OPENED LA BARRA TMB, PERO COMO NO HAY
- SE MANTIENE 
- */
-    .menu i.fa-times,
-    .menu.opened i.fa-bars{
-        display: none;
-    }
+/*    LA EQUIS SE ENCONDE Y SI 
+HAY OPENED LA BARRA TMB, PERO COMO NO HAY
+SE MANTIENE 
+*/
+  .menu i.fa-times,
+  .menu.opened i.fa-bars{
+      display: none;
+  }
 /* LUEGO SI HAY OPENED Y LA EQUIX SE ACTIVA
 CON BLOCK Y LA CONDICIONAL DE ARRIBA
 COMO YA HAY OPENED LAS BARRAS SE VAN */
-    .menu.opened i.fa-times,
-    .menu i.fa-bars {
-        display: block;
-        animation: enter 0.8s;
-    }
+  .menu.opened i.fa-times,
+  .menu i.fa-bars {
+      display: block;
+      animation: enter 0.8s;
+  }
 
-    @keyframes enter {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-  
-    .menu-list{
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 80%;
-        height: 100%;
-        background-color: #711def;
-        color: white;
-        padding: 4.6rem;
-        flex-direction: column;
-        padding-top: 8rem;
-        align-items: flex-end;
-        transform: translateX(100%);
-        transition: transform 0.5s;
-    }
-    .menu-list li{
-        font-size: 2.5rem;
-        margin: 3.2rem 0;
-    }
+  @keyframes enter {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
 
-    .menu.opened .menu-list{
-        transform: translateX(0%);
-    }
-    .menu.opened button{
-       color:white
-    }
- }
+  .menu-list{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 100%;
+      background-color: #711def;
+      color: white;
+      padding: 4.6rem;
+      flex-direction: column;
+      padding-top: 8rem;
+      align-items: flex-end;
+      transform: translateX(100%);
+      transition: transform 0.5s;
+  }
+  .menu-list li{
+      font-size: 2.5rem;
+      margin: 3.2rem 0;
+  }
+
+  .menu.opened .menu-list{
+      transform: translateX(0%);
+  }
+  .menu.opened button{
+     color:white
+  }
+}
+
+/*   ///MAIN */
+ 
